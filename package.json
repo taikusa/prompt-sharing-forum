@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cy:run": "cypress run --env tags='not @ignore'",
+    "cy:open": "cypress open --env tags='not @ignore'"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/webpack-preprocessor": "^6.0.0",
+    "cypress": "^13.5.1",
+    "esbuild": "^0.19.5",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0"
   }
 }
