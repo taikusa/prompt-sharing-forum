@@ -5,5 +5,5 @@ Given("トップページに訪れる", () => {
 })
 
 Then("ロゴが見える", () => {
-    cy.get("h1").should("be.visible");
+    cy.get("img[alt='logo']").should("be.visible");
 })
