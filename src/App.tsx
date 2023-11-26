@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.png";
 import "./App.css";
 import PostCard from "./PostCard";
+import PostForm from "./PostForm";
 
 function App() {
   return (
@@ -46,13 +47,9 @@ function App() {
         <p className="text-2xl font-extrabold px-6 pb-6">
           ✏️ プロンプトを作成する
         </p>
-        <div className="card bg-base-100 mx-6">
+        <div className="card bg-base-100 mx-6 mb-6">
           <div className="card-body">
-            <h2 className="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
-            </div>
+            <PostForm/>
           </div>
         </div>
       </div>
