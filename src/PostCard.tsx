@@ -5,14 +5,20 @@ import { faBookmark, faCoffee, faThumbsUp } from "@fortawesome/free-solid-svg-ic
 
 function PostCard() {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <div className="card-body pb-4">
+    <div className="card w-[32rem] bg-base-100 shadow-xl">
+      <div className="card-body gap-6 pb-6">
         <p className="font-bold">
           適当なピヨピヨを高精度なホゲホゲフガフガにしてもらうすごいプロンプト
         </p>
         <p className="bg-neutral text-base-100 font-bold rounded-box p-4">
-          あなたは限られた食材から献立を立案するスーパーシェフです
-          。#食材#で指定された食材のみを用いて#気分#に適した本日の献立を考案してください。
+          #お願い
+          あなたは限られた食材から献立を立案するスーパーシェフです。提供された情報をもとに献立を提案してください。
+          #目的
+          毎日料理を作る全ての人の負担を軽減すること
+          #やること
+          #食材#で指定された食材のみを用いて#気分#に適した本日の献立を考案してください。
+          #出力
+          指定はなし
           ...
         </p>
       </div>
@@ -22,7 +28,7 @@ function PostCard() {
           <button className="btn btn-xs btn-disabled">
             <FontAwesomeIcon icon={faBookmark} className="text-lg"/>
           </button>
-          <button className="btn btn-xs">
+          <button className="btn btn-xs btn-disabled">
             <FontAwesomeIcon icon={faThumbsUp} className="text-lg"/>
           </button>
         </div>

@@ -12,8 +12,8 @@ function App() {
           <img src={logo} alt="logo" width="40" />
         </div>
         <div className="flex-none gap-2">
-          <button className="btn btn-sm">ログイン</button>
-          <button className="btn btn-sm">サインアップ</button>
+          <button className="btn btn-sm btn-disabled">ログイン</button>
+          <button className="btn btn-sm btn-disabled">サインアップ</button>
         </div>
       </div>
 
