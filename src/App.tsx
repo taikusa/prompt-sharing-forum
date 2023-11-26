@@ -2,7 +2,10 @@ import React from "react";
 import logo from "./logo.png";
 import "./App.css";
 import PostCard from "./PostCard";
+import RankingCard from "./RankingCard";
 import PostForm from "./PostForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -19,9 +22,22 @@ function App() {
 
       <div className="flex-2 gap-6">
         <p className="text-2xl font-extrabold px-6 pb-6">
+          🏆 今月の
+          <FontAwesomeIcon icon={faThumbsUp} className="text-2xl mx-1" />
+          ランキング
+        </p>
+        <div className="flex lg:flex-row flex-col gap-6 px-6 pb-8 -mb-4 w-full">
+          <RankingCard />
+          <RankingCard />
+          <RankingCard />
+        </div>
+      </div>
+
+      <div className="flex-2 gap-6">
+        <p className="text-2xl font-extrabold px-6 pb-6">
           👀 今作成されたプロンプト
         </p>
-        <div className="carousel carousel-center gap-4 px-6 pb-8 w-full">
+        <div className="carousel carousel-center gap-4 px-6 pb-8 -mb-4 w-full">
           <div className="carousel-item">
             <PostCard />
           </div>
@@ -49,7 +65,7 @@ function App() {
         </p>
         <div className="card bg-base-100 mx-6 mb-6">
           <div className="card-body">
-            <PostForm/>
+            <PostForm />
           </div>
         </div>
       </div>

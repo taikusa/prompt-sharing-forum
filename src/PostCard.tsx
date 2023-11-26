@@ -5,7 +5,7 @@ import { faBookmark, faCoffee, faThumbsUp } from "@fortawesome/free-solid-svg-ic
 
 function PostCard() {
   return (
-    <div className="card w-[32rem] bg-base-100 shadow-xl">
+    <div className="card sm:w-[32rem] w-[20rem] bg-base-100 shadow-xl">
       <div className="card-body gap-6 pb-6">
         <p className="font-bold">
           適当なピヨピヨを高精度なホゲホゲフガフガにしてもらうすごいプロンプト
@@ -16,9 +16,6 @@ function PostCard() {
           #目的
           毎日料理を作る全ての人の負担を軽減すること
           #やること
-          #食材#で指定された食材のみを用いて#気分#に適した本日の献立を考案してください。
-          #出力
-          指定はなし
           ...
         </p>
       </div>
