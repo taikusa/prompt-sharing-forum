@@ -26,7 +26,7 @@ function App() {
           <FontAwesomeIcon icon={faThumbsUp} className="text-2xl mx-1" />
           ランキング
         </p>
-        <div className="flex lg:flex-row flex-col gap-6 sm:px-16 px-8 pb-8 -mb-4 w-full">
+        <div className="flex sm:flex-row flex-col gap-6 sm:px-16 px-8 pb-8 -mb-4 w-full">
           <RankingCard />
           <RankingCard />
           <RankingCard />
